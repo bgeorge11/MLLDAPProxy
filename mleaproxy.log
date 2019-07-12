@@ -1,0 +1,261 @@
+2019-07-12 11:16:17,746 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bgeorge/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bgeorge/.m2/repository/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-07-12 11:16:17,769 INFO com.marklogic.MLEAProxyTests [main] Starting MLEAProxyTests on HPZBook-4047 with PID 18460 (started by bgeorge in C:\Users\bgeorge\git\MLEAProxy)
+2019-07-12 11:16:17,770 INFO com.marklogic.MLEAProxyTests [main] No active profile set, falling back to default profiles: default
+2019-07-12 11:16:20,864 INFO com.marklogic.MLEAProxyTests [main] Started MLEAProxyTests in 3.655 seconds (JVM running for 5.093)
+2019-07-12 11:16:21,140 INFO com.marklogic.handlers.LDAPlistener [main] No inMemory LDAP servers defined.
+2019-07-12 11:16:21,145 INFO com.marklogic.handlers.LDAPlistener [main] Starting LDAP listeners.
+2019-07-12 11:16:21,153 DEBUG com.marklogic.handlers.LDAPlistener [main] IP Address: 0.0.0.0
+2019-07-12 11:16:21,154 DEBUG com.marklogic.handlers.LDAPlistener [main] Port: 10389
+2019-07-12 11:16:21,155 DEBUG com.marklogic.handlers.LDAPlistener [main] Request handler: com.marklogic.handlers.LDAPRequestHandler
+2019-07-12 11:16:21,158 DEBUG com.marklogic.handlers.LDAPlistener [main] Building server sets
+2019-07-12 11:16:21,158 DEBUG com.marklogic.handlers.LDAPlistener [main] ServerSet: set1
+2019-07-12 11:16:21,173 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server host: 192.168.0.60
+2019-07-12 11:16:21,174 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server Port: 389
+2019-07-12 11:16:21,195 DEBUG com.marklogic.handlers.LDAPlistener [main] SingleServerSet(server=192.168.0.60:389, includesAuthentication=false, includesPostConnectProcessing=false)
+2019-07-12 11:16:21,212 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-12 11:16:21,223 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:794)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:224)
+	at com.unboundid.ldap.listener.LDAPListener.startListening(LDAPListener.java:161)
+	at com.marklogic.handlers.LDAPlistener.run(LDAPListener.java:139)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	... 33 common frames omitted
+2019-07-12 11:16:21,270 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bgeorge/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bgeorge/.m2/repository/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-07-12 11:16:21,274 INFO com.marklogic.MLEAProxyTests [main] Starting MLEAProxyTests on HPZBook-4047 with PID 18460 (started by bgeorge in C:\Users\bgeorge\git\MLEAProxy)
+2019-07-12 11:16:21,276 INFO com.marklogic.MLEAProxyTests [main] No active profile set, falling back to default profiles: default
+2019-07-12 11:16:22,719 INFO com.marklogic.MLEAProxyTests [main] Started MLEAProxyTests in 1.49 seconds (JVM running for 6.949)
+2019-07-12 11:16:22,728 INFO com.marklogic.handlers.LDAPlistener [main] No inMemory LDAP servers defined.
+2019-07-12 11:16:22,730 INFO com.marklogic.handlers.LDAPlistener [main] Starting LDAP listeners.
+2019-07-12 11:16:22,736 DEBUG com.marklogic.handlers.LDAPlistener [main] IP Address: 0.0.0.0
+2019-07-12 11:16:22,736 DEBUG com.marklogic.handlers.LDAPlistener [main] Port: 10389
+2019-07-12 11:16:22,737 DEBUG com.marklogic.handlers.LDAPlistener [main] Request handler: com.marklogic.handlers.LDAPRequestHandler
+2019-07-12 11:16:22,739 DEBUG com.marklogic.handlers.LDAPlistener [main] Building server sets
+2019-07-12 11:16:22,739 DEBUG com.marklogic.handlers.LDAPlistener [main] ServerSet: set1
+2019-07-12 11:16:22,749 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server host: 192.168.0.60
+2019-07-12 11:16:22,750 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server Port: 389
+2019-07-12 11:16:22,751 DEBUG com.marklogic.handlers.LDAPlistener [main] SingleServerSet(server=192.168.0.60:389, includesAuthentication=false, includesPostConnectProcessing=false)
+2019-07-12 11:16:22,754 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-07-12 11:16:22,756 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:794) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) [spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) [spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[na:1.8.0_152]
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[na:1.8.0_152]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387) ~[na:1.8.0_152]
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[na:1.8.0_152]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) ~[na:1.8.0_152]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[na:1.8.0_152]
+	at java.net.ServerSocket.<init>(ServerSocket.java:181) ~[na:1.8.0_152]
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:224) ~[na:1.8.0_152]
+	at com.unboundid.ldap.listener.LDAPListener.startListening(LDAPListener.java:161) ~[unboundid-ldapsdk-4.0.9.jar:4.0.9]
+	at com.marklogic.handlers.LDAPlistener.run(LDAPListener.java:139) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	... 32 common frames omitted
+2019-07-12 11:16:22,760 ERROR org.springframework.test.context.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c8c12ac] to prepare test instance [com.marklogic.MLEAProxyTests@5656be13]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:807) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:794) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 28 common frames omitted
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[na:1.8.0_152]
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[na:1.8.0_152]
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387) ~[na:1.8.0_152]
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[na:1.8.0_152]
+	at java.net.ServerSocket.bind(ServerSocket.java:375) ~[na:1.8.0_152]
+	at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[na:1.8.0_152]
+	at java.net.ServerSocket.<init>(ServerSocket.java:181) ~[na:1.8.0_152]
+	at javax.net.DefaultServerSocketFactory.createServerSocket(ServerSocketFactory.java:224) ~[na:1.8.0_152]
+	at com.unboundid.ldap.listener.LDAPListener.startListening(LDAPListener.java:161) ~[unboundid-ldapsdk-4.0.9.jar:4.0.9]
+	at com.marklogic.handlers.LDAPlistener.run(LDAPListener.java:139) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	... 33 common frames omitted
+2019-07-12 11:24:38,726 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bgeorge/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bgeorge/.m2/repository/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-07-12 11:24:38,755 INFO com.marklogic.MLEAProxyTests [main] Starting MLEAProxyTests on HPZBook-4047 with PID 22672 (started by bgeorge in C:\Users\bgeorge\git\MLEAProxy)
+2019-07-12 11:24:38,757 INFO com.marklogic.MLEAProxyTests [main] No active profile set, falling back to default profiles: default
+2019-07-12 11:24:42,057 INFO com.marklogic.MLEAProxyTests [main] Started MLEAProxyTests in 3.981 seconds (JVM running for 5.922)
+2019-07-12 11:24:42,375 INFO com.marklogic.handlers.LDAPlistener [main] No inMemory LDAP servers defined.
+2019-07-12 11:24:42,378 INFO com.marklogic.handlers.LDAPlistener [main] Starting LDAP listeners.
+2019-07-12 11:24:42,386 DEBUG com.marklogic.handlers.LDAPlistener [main] IP Address: 0.0.0.0
+2019-07-12 11:24:42,387 DEBUG com.marklogic.handlers.LDAPlistener [main] Port: 30389
+2019-07-12 11:24:42,389 DEBUG com.marklogic.handlers.LDAPlistener [main] Request handler: com.marklogic.handlers.LDAPRequestHandler
+2019-07-12 11:24:42,391 DEBUG com.marklogic.handlers.LDAPlistener [main] Building server sets
+2019-07-12 11:24:42,391 DEBUG com.marklogic.handlers.LDAPlistener [main] ServerSet: set1
+2019-07-12 11:24:42,407 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server host: 192.168.253.5
+2019-07-12 11:24:42,408 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server Port: 1389
+2019-07-12 11:24:42,428 DEBUG com.marklogic.handlers.LDAPlistener [main] SingleServerSet(server=192.168.253.5:1389, includesAuthentication=false, includesPostConnectProcessing=false)
+2019-07-12 11:24:42,447 INFO com.marklogic.handlers.LDAPlistener [main] Listening on: 0.0.0.0:30389 ( LDAP proxy with LDAP connection to back-end Active Directory server. )
+2019-07-12 11:28:32,096 INFO com.marklogic.MLEAProxy [main] Starting MLEAProxy v1.0.0 on HPZBook-4047 with PID 17092 (C:\Users\bgeorge\git\MLEAProxy\target\mleaproxy-1.0.0.jar started by bgeorge in C:\Users\bgeorge\git\MLEAProxy)
+2019-07-12 11:28:32,101 INFO com.marklogic.MLEAProxy [main] No active profile set, falling back to default profiles: default
+2019-07-12 11:28:34,381 INFO com.marklogic.MLEAProxy [main] Started MLEAProxy in 2.912 seconds (JVM running for 3.588)
+2019-07-12 11:28:34,682 INFO com.marklogic.handlers.LDAPlistener [main] No inMemory LDAP servers defined.
+2019-07-12 11:28:34,687 INFO com.marklogic.handlers.LDAPlistener [main] Starting LDAP listeners.
+2019-07-12 11:28:34,718 DEBUG com.marklogic.handlers.LDAPlistener [main] IP Address: 0.0.0.0
+2019-07-12 11:28:34,746 DEBUG com.marklogic.handlers.LDAPlistener [main] Port: 30389
+2019-07-12 11:28:34,755 DEBUG com.marklogic.handlers.LDAPlistener [main] Request handler: com.marklogic.handlers.LDAPRequestHandler
+2019-07-12 11:28:34,783 DEBUG com.marklogic.handlers.LDAPlistener [main] Building server sets
+2019-07-12 11:28:34,788 DEBUG com.marklogic.handlers.LDAPlistener [main] ServerSet: set1
+2019-07-12 11:28:34,828 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server host: 192.168.253.5
+2019-07-12 11:28:34,829 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server Port: 1389
+2019-07-12 11:28:34,866 DEBUG com.marklogic.handlers.LDAPlistener [main] SingleServerSet(server=192.168.253.5:1389, includesAuthentication=false, includesPostConnectProcessing=false)
+2019-07-12 11:28:34,898 INFO com.marklogic.handlers.LDAPlistener [main] Listening on: 0.0.0.0:30389 ( LDAP proxy with LDAP connection to back-end Active Directory server. )
+2019-07-12 12:00:51,574 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] 12-+-BindRequestProtocolOp(version=3, bindDN='cn=Directory Manager', type=simple)-+-[]
+2019-07-12 12:00:51,587 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=17 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=1 sendingLDAPRequest="SimpleBindRequest(dn='cn=Directory Manager')"
+2019-07-12 12:00:51,665 INFO com.unboundid.ldap.sdk [Connection reader for connection 0 to 192.168.253.5:1389] level="INFO" threadID=19 threadName="Connection reader for connection 0 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" readLDAPResult="BindResult(resultCode=0 (success), messageID=1, hasServerSASLCredentials=false)"
+2019-07-12 12:00:51,685 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] 12-+-BindResponseProtocolOp(resultCode=0)-+-[]
+2019-07-12 12:00:51,727 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] 13-+-SearchRequestProtocolOp(baseDN='uid=aknutson,ou=People,dc=example,dc=com', scope='BASE', derefPolicy='NEVER', sizeLimit=0, timeLimit=0, typesOnly=false, filter='(objectclass=*)', attributes={*})-+-[]
+2019-07-12 12:00:51,755 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=17 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" socketTimeoutMillis=30000 messageID=2 sendingLDAPRequest="SearchRequest(baseDN='uid=aknutson,ou=People,dc=example,dc=com', scope=BASE, deref=NEVER, sizeLimit=0, timeLimit=0, filter='(objectclass=*)', attrs={*})"
+2019-07-12 12:00:51,807 INFO com.unboundid.ldap.sdk [Connection reader for connection 0 to 192.168.253.5:1389] level="INFO" threadID=19 threadName="Connection reader for connection 0 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" readLDAPResult="SearchResultEntry(dn='uid=aknutson,ou=People,dc=example,dc=com', messageID=2, attributes={Attribute(name=objectClass, values={'top', 'posixAccount', 'organizationalPerson', 'inetOrgPerson', 'person'}), Attribute(name=cn, values={'Ashley Knutson'}), Attribute(name=facsimileTelephoneNumber, values={'+1 408 555 4774'}), Attribute(name=gidNumber, values={'1000'}), Attribute(name=givenName, values={'Ashley'}), Attribute(name=homeDirectory, values={'/home/aknutson'}), Attribute(name=l, values={'Cupertino'}), Attribute(name=mail, values={'aknutson@example.com'}), Attribute(name=ou, values={'Product Development', 'People'}), Attribute(name=roomNumber, values={'4736'}), Attribute(name=sn, values={'Knutson'}), Attribute(name=telephoneNumber, values={'+1 408 555 2169'}), Attribute(name=uid, values={'aknutson'}), Attribute(name=uidNumber, values={'1112'}), Attribute(name=userPassword, values={'{SSHA512}GvSfXHSqVBFC2sN5IoMLdQiV7BMwYbZMcedGk6IkGY0JbSafbrPJ7DJgIUraX56BYFe6IqjLJo2Ylo0DjglWLBhWN3Hudlxs'})}, controls={})"
+2019-07-12 12:00:51,824 INFO com.unboundid.ldap.sdk [Connection reader for connection 0 to 192.168.253.5:1389] level="INFO" threadID=19 threadName="Connection reader for connection 0 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" readLDAPResult="SearchResult(resultCode=0 (success), messageID=2)"
+2019-07-12 12:00:51,824 DEBUG com.marklogic.processors.SearchResultListener [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] [Attribute(name=objectClass, values={'top', 'posixAccount', 'organizationalPerson', 'inetOrgPerson', 'person'}), Attribute(name=cn, values={'Ashley Knutson'}), Attribute(name=facsimileTelephoneNumber, values={'+1 408 555 4774'}), Attribute(name=gidNumber, values={'1000'}), Attribute(name=givenName, values={'Ashley'}), Attribute(name=homeDirectory, values={'/home/aknutson'}), Attribute(name=l, values={'Cupertino'}), Attribute(name=mail, values={'aknutson@example.com'}), Attribute(name=ou, values={'Product Development', 'People'}), Attribute(name=roomNumber, values={'4736'}), Attribute(name=sn, values={'Knutson'}), Attribute(name=telephoneNumber, values={'+1 408 555 2169'}), Attribute(name=uid, values={'aknutson'}), Attribute(name=uidNumber, values={'1112'}), Attribute(name=userPassword, values={'{SSHA512}GvSfXHSqVBFC2sN5IoMLdQiV7BMwYbZMcedGk6IkGY0JbSafbrPJ7DJgIUraX56BYFe6IqjLJo2Ylo0DjglWLBhWN3Hudlxs'})]
+2019-07-12 12:00:51,829 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] 13-+-SearchResult(resultCode=0 (success), messageID=2, entriesReturned=1, referencesReturned=0)-+-
+2019-07-12 12:00:51,831 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] 13-+-ResponseProtocolOp(type=65, resultCode=0)-+-[]
+2019-07-12 12:00:51,834 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=17 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56108 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=0 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=3 sendingLDAPRequest="UnbindRequest()"
+2019-07-12 12:08:56,754 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56557 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=20 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56557 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=1 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=1 sendingLDAPRequest="UnbindRequest()"
+2019-07-12 12:09:01,494 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 15-+-BindRequestProtocolOp(version=3, bindDN='cn=Directory Manager', type=simple)-+-[]
+2019-07-12 12:09:01,495 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=23 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=1 sendingLDAPRequest="SimpleBindRequest(dn='cn=Directory Manager')"
+2019-07-12 12:09:01,554 INFO com.unboundid.ldap.sdk [Connection reader for connection 2 to 192.168.253.5:1389] level="INFO" threadID=25 threadName="Connection reader for connection 2 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" readLDAPResult="BindResult(resultCode=0 (success), messageID=1, hasServerSASLCredentials=false)"
+2019-07-12 12:09:01,556 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 15-+-BindResponseProtocolOp(resultCode=0)-+-[]
+2019-07-12 12:09:01,579 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 16-+-SearchRequestProtocolOp(baseDN='uid=aknutson,ou=People,dc=example,dc=com', scope='BASE', derefPolicy='NEVER', sizeLimit=0, timeLimit=0, typesOnly=false, filter='(objectclass=*)', attributes={*})-+-[]
+2019-07-12 12:09:01,619 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=23 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" socketTimeoutMillis=30000 messageID=2 sendingLDAPRequest="SearchRequest(baseDN='uid=aknutson,ou=People,dc=example,dc=com', scope=BASE, deref=NEVER, sizeLimit=0, timeLimit=0, filter='(objectclass=*)', attrs={*})"
+2019-07-12 12:09:01,660 INFO com.unboundid.ldap.sdk [Connection reader for connection 2 to 192.168.253.5:1389] level="INFO" threadID=25 threadName="Connection reader for connection 2 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" readLDAPResult="SearchResultEntry(dn='uid=aknutson,ou=People,dc=example,dc=com', messageID=2, attributes={Attribute(name=objectClass, values={'top', 'posixAccount', 'organizationalPerson', 'inetOrgPerson', 'person'}), Attribute(name=cn, values={'Ashley Knutson'}), Attribute(name=facsimileTelephoneNumber, values={'+1 408 555 4774'}), Attribute(name=gidNumber, values={'1000'}), Attribute(name=givenName, values={'Ashley'}), Attribute(name=homeDirectory, values={'/home/aknutson'}), Attribute(name=l, values={'Cupertino'}), Attribute(name=mail, values={'aknutson@example.com'}), Attribute(name=ou, values={'Product Development', 'People'}), Attribute(name=roomNumber, values={'4736'}), Attribute(name=sn, values={'Knutson'}), Attribute(name=telephoneNumber, values={'+1 408 555 2169'}), Attribute(name=uid, values={'aknutson'}), Attribute(name=uidNumber, values={'1112'}), Attribute(name=userPassword, values={'{SSHA512}GvSfXHSqVBFC2sN5IoMLdQiV7BMwYbZMcedGk6IkGY0JbSafbrPJ7DJgIUraX56BYFe6IqjLJo2Ylo0DjglWLBhWN3Hudlxs'})}, controls={})"
+2019-07-12 12:09:01,664 INFO com.unboundid.ldap.sdk [Connection reader for connection 2 to 192.168.253.5:1389] level="INFO" threadID=25 threadName="Connection reader for connection 2 to 192.168.253.5:1389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" readLDAPResult="SearchResult(resultCode=0 (success), messageID=2)"
+2019-07-12 12:09:01,664 DEBUG com.marklogic.processors.SearchResultListener [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] [Attribute(name=objectClass, values={'top', 'posixAccount', 'organizationalPerson', 'inetOrgPerson', 'person'}), Attribute(name=cn, values={'Ashley Knutson'}), Attribute(name=facsimileTelephoneNumber, values={'+1 408 555 4774'}), Attribute(name=gidNumber, values={'1000'}), Attribute(name=givenName, values={'Ashley'}), Attribute(name=homeDirectory, values={'/home/aknutson'}), Attribute(name=l, values={'Cupertino'}), Attribute(name=mail, values={'aknutson@example.com'}), Attribute(name=ou, values={'Product Development', 'People'}), Attribute(name=roomNumber, values={'4736'}), Attribute(name=sn, values={'Knutson'}), Attribute(name=telephoneNumber, values={'+1 408 555 2169'}), Attribute(name=uid, values={'aknutson'}), Attribute(name=uidNumber, values={'1112'}), Attribute(name=userPassword, values={'{SSHA512}GvSfXHSqVBFC2sN5IoMLdQiV7BMwYbZMcedGk6IkGY0JbSafbrPJ7DJgIUraX56BYFe6IqjLJo2Ylo0DjglWLBhWN3Hudlxs'})]
+2019-07-12 12:09:01,727 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 16-+-SearchResult(resultCode=0 (success), messageID=2, entriesReturned=1, referencesReturned=0)-+-
+2019-07-12 12:09:01,764 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 16-+-ResponseProtocolOp(type=65, resultCode=0)-+-[]
+2019-07-12 12:09:01,797 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=23 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=3 sendingLDAPRequest="UnbindRequest()"
