@@ -259,3 +259,26 @@ You may wish to exclude one of them to ensure predictable runtime behavior
 2019-07-12 12:09:01,727 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 16-+-SearchResult(resultCode=0 (success), messageID=2, entriesReturned=1, referencesReturned=0)-+-
 2019-07-12 12:09:01,764 DEBUG com.marklogic.processors.ProxyRequestProcessor [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] 16-+-ResponseProtocolOp(type=65, resultCode=0)-+-[]
 2019-07-12 12:09:01,797 INFO com.unboundid.ldap.sdk [LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389] level="INFO" threadID=23 threadName="LDAPListener client connection reader for connection from 0:0:0:0:0:0:0:1:56561 to 0:0:0:0:0:0:0:1:30389" ldapSDKVersion="4.0.9" revision="29290" connectionID=2 connectedTo="192.168.253.5:1389" socketTimeoutMillis=300000 messageID=3 sendingLDAPRequest="UnbindRequest()"
+2019-07-12 13:20:32,147 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/bgeorge/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/bgeorge/.m2/repository/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-07-12 13:20:32,170 INFO com.marklogic.MLEAProxyTests [main] Starting MLEAProxyTests on HPZBook-4047 with PID 15528 (started by bgeorge in C:\Users\bgeorge\git\MLLDAPProxy)
+2019-07-12 13:20:32,171 INFO com.marklogic.MLEAProxyTests [main] No active profile set, falling back to default profiles: default
+2019-07-12 13:20:35,483 INFO com.marklogic.MLEAProxyTests [main] Started MLEAProxyTests in 3.789 seconds (JVM running for 5.141)
+2019-07-12 13:20:35,758 INFO com.marklogic.handlers.LDAPlistener [main] No inMemory LDAP servers defined.
+2019-07-12 13:20:35,762 INFO com.marklogic.handlers.LDAPlistener [main] Starting LDAP listeners.
+2019-07-12 13:20:35,771 DEBUG com.marklogic.handlers.LDAPlistener [main] IP Address: 0.0.0.0
+2019-07-12 13:20:35,772 DEBUG com.marklogic.handlers.LDAPlistener [main] Port: 30389
+2019-07-12 13:20:35,774 DEBUG com.marklogic.handlers.LDAPlistener [main] Request handler: com.marklogic.handlers.LDAPRequestHandler
+2019-07-12 13:20:35,777 DEBUG com.marklogic.handlers.LDAPlistener [main] Building server sets
+2019-07-12 13:20:35,777 DEBUG com.marklogic.handlers.LDAPlistener [main] ServerSet: set1
+2019-07-12 13:20:35,792 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server host: 192.168.253.5
+2019-07-12 13:20:35,793 DEBUG com.marklogic.handlers.LDAPlistener [main] LDAP Server Port: 1389
+2019-07-12 13:20:35,816 DEBUG com.marklogic.handlers.LDAPlistener [main] SingleServerSet(server=192.168.253.5:1389, includesAuthentication=false, includesPostConnectProcessing=false)
+2019-07-12 13:20:35,838 INFO com.marklogic.handlers.LDAPlistener [main] Listening on: 0.0.0.0:30389 ( LDAP proxy with LDAP connection to back-end Active Directory server. )
